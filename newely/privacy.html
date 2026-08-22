@@ -171,7 +171,7 @@
       <p>To exercise these rights, contact us at ben@benclabs.com. We may need to verify your identity before fulfilling certain requests.</p>
 
       <p><strong style="color:var(--ny-ink);">Governing law</strong></p>
-      <p>This policy is governed by the laws of England and Wales, without regard to its conflict-of-law provisions, except where local law requires otherwise (for example, mandatory consumer protection or data protection rights in your country of residence, which are unaffected by this clause).</p>
+      <p>This policy is governed by the laws of <strong style="color:var(--ny-coral);">[JURISDICTION]</strong>, without regard to its conflict-of-law provisions, except where local law requires otherwise (for example, mandatory consumer protection or data protection rights in your country of residence, which are unaffected by this clause).</p>
     </section>
 
     <section>
@@ -204,5 +204,29 @@
   </div>
 </footer>
 
+<script>
+// hides the header when scrolling down, brings it back when scrolling up
+(function () {
+  var header = document.querySelector('header.site');
+  if (!header) return;
+  var lastY = window.scrollY;
+  var ticking = false;
+
+  window.addEventListener('scroll', function () {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function () {
+      var y = window.scrollY;
+      if (y > lastY && y > 80) {
+        header.classList.add('header-hidden');
+      } else {
+        header.classList.remove('header-hidden');
+      }
+      lastY = y;
+      ticking = false;
+    });
+  });
+})();
+</script>
 </body>
 </html>

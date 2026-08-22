@@ -100,5 +100,29 @@
 </footer>
 
 <script src="../script.js"></script>
+<script>
+// hides the header when scrolling down, brings it back when scrolling up
+(function () {
+  var header = document.querySelector('header.site');
+  if (!header) return;
+  var lastY = window.scrollY;
+  var ticking = false;
+
+  window.addEventListener('scroll', function () {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function () {
+      var y = window.scrollY;
+      if (y > lastY && y > 80) {
+        header.classList.add('header-hidden');
+      } else {
+        header.classList.remove('header-hidden');
+      }
+      lastY = y;
+      ticking = false;
+    });
+  });
+})();
+</script>
 </body>
 </html>

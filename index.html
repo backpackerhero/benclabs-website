@@ -32,9 +32,9 @@
 
       <!-- TODO: confirm these numbers before shipping -->
       <div class="readout">
-        <span><b>1</b> App Live</span>
-        <span><b>1</b> Archived</span>
-        <span><b>2026</b> Studio Founded</span>
+        <span><b>1</b> app live</span>
+        <span><b>1</b> archived</span>
+        <span><b>2026</b> studio founded</span>
       </div>
     </div>
   </section>
@@ -71,6 +71,7 @@
           <p>Your co-pilot for backpacking trips — plan routes, sort stays and transport, and actually enjoy the chaos of travelling.</p>
           <div class="app-card-links">
             <a href="backpacker-hero/" class="app-card-link-real">Overview</a>
+
           </div>
         </div>
       </div>
@@ -87,5 +88,29 @@
 </footer>
 
 <script src="script.js"></script>
+<script>
+// hides the header when scrolling down, brings it back when scrolling up
+(function () {
+  var header = document.querySelector('header.site');
+  if (!header) return;
+  var lastY = window.scrollY;
+  var ticking = false;
+
+  window.addEventListener('scroll', function () {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function () {
+      var y = window.scrollY;
+      if (y > lastY && y > 80) {
+        header.classList.add('header-hidden');
+      } else {
+        header.classList.remove('header-hidden');
+      }
+      lastY = y;
+      ticking = false;
+    });
+  });
+})();
+</script>
 </body>
 </html>
