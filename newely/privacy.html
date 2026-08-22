@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Newely</title>
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body class="ny-theme">
+
+<header class="site" style="background:transparent;backdrop-filter:none;border:none;">
+  <div class="wrap">
+    <div class="brand"><a href="../" style="color:inherit;text-decoration:none;">BENC <span>Labs</span></a></div>
+    <nav class="site ny-nav">
+      <a href="index.html">Newely</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="wrap">
+    <a class="back-link" href="index.html">&larr; Newely</a>
+    <div class="page-eyebrow">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 22 August 2026</p>
+
+    <section>
+      <p><strong style="color:var(--ny-ink);">Data controller</strong></p>
+      <p>Newely is provided by BENC Labs Ltd, a company registered in the United Kingdom with registered number 16806878, registered address at 167-169 Great Portland Street, London, England, W1W 5PF ("we," "us," "our," or "the App"). If you are located outside the United Kingdom, BENC Labs Ltd acts as the data controller for your personal information unless stated otherwise.</p>
+      <p>Newely ("we," "us," "our," or "the App") is an interview practice app that helps you prepare for job interviews using AI-generated questions and AI-powered feedback. This policy explains what information we collect, how it's used, and the choices you have.</p>
+      <p>This policy applies to the Newely mobile app. If you have questions, contact us at ben@benclabs.com.</p>
+    </section>
+
+    <section>
+      <h2>1. Information we collect</h2>
+      <p><strong style="color:var(--ny-ink);">Account information</strong></p>
+      <p>When you sign in with Apple or Google, we receive basic profile information from that provider (such as your name and email address, depending on what you choose to share) in order to create and identify your account. We use Firebase Authentication to manage sign-in.</p>
+      <p>You can also use Newely as a guest without creating an account. In this case, no account information is collected, but your practice history will not be linked to an identity and may not carry over if you reinstall the app or switch devices.</p>
+
+      <p><strong style="color:var(--ny-ink);">Content you provide</strong></p>
+      <ul>
+        <li>Job details: if you choose to fill in a company and role, or paste a job description, that text is used to generate interview questions tailored to that role.</li>
+        <li>Your answers: when you answer a practice question by typing, that text is stored as part of your session history.</li>
+        <li>Video and audio recordings: if you choose to record a video answer, the app accesses your device's camera and microphone (with your permission) to capture it.</li>
+      </ul>
+
+      <p><strong style="color:var(--ny-ink);">Automatically collected information</strong></p>
+      <p>We do not use analytics or advertising SDKs that track you across other apps or websites. Standard technical information (such as error logs) may be collected to help us diagnose and fix problems with the app.</p>
+
+      <p><strong style="color:var(--ny-ink);">Age requirement</strong></p>
+      <p>Newely is intended for users aged 16 and over (or the applicable minimum age for consent to data processing in your jurisdiction). We ask users to confirm they meet this age requirement when creating an account. See Section 7 for more on children's privacy.</p>
+    </section>
+
+    <section>
+      <h2>2. How we use AI, and what happens to your data</h2>
+      <p>Newely uses third-party AI providers to power its core features. Here is exactly what is sent, to whom, and what happens to it.</p>
+
+      <p><strong style="color:var(--ny-ink);">Generating interview questions</strong></p>
+      <p>The job description, company name, role, interview stage, and difficulty level you select are sent to Anthropic (maker of the Claude AI model) to generate realistic interview questions and answer hints tailored to your situation.</p>
+
+      <p><strong style="color:var(--ny-ink);">Transcribing your spoken answers</strong></p>
+      <p>If you record a video answer:</p>
+      <ul>
+        <li>The video is uploaded from your device to our secure backend (hosted on Google Firebase Cloud Functions).</li>
+        <li>Our backend extracts the audio from the video and sends it to OpenAI (maker of the Whisper transcription model) to convert your spoken answer into text.</li>
+        <li>The video and the extracted audio file are deleted immediately after transcription, on both your device and our backend. We do not retain, store, or reuse your video or audio recordings. Only the resulting text transcript is kept, as part of your session history.</li>
+      </ul>
+
+      <p><strong style="color:var(--ny-ink);">Biometric information</strong></p>
+      <p>If you record a video answer, the video and audio may briefly contain biometric identifiers (such as your voice or face). We process this data only to produce a text transcript, and we do not extract, store, or use voiceprints, faceprints, or any other biometric template. The recording itself is deleted immediately after transcription, as described above, and is never used for identification or profiling. If you are located in a jurisdiction with specific biometric privacy laws (such as Illinois), you may have additional rights, including the right to a retention schedule and destruction guidelines for biometric data; because we do not retain recordings, no biometric data is stored beyond the transcription process.</p>
+
+      <p><strong style="color:var(--ny-ink);">Judging your answers</strong></p>
+      <p>The text transcript of your answer (whether typed or transcribed from video), along with the original question and hint, is sent to Anthropic's Claude model to generate a score, a category breakdown, and written feedback.</p>
+
+      <p><strong style="color:var(--ny-ink);">Automated scoring</strong></p>
+      <p>Your feedback score and category breakdown are generated automatically by an AI model, without human review. This is intended as a practice aid rather than a formal or official assessment, and should not be treated as a definitive judgment of your interview ability. If you believe a score is inaccurate or unfair, you can disregard it, try the question again, or contact us at ben@benclabs.com.</p>
+
+      <p><strong style="color:var(--ny-ink);">Important notes on third-party AI processing</strong></p>
+      <ul>
+        <li>Anthropic and OpenAI process this data on our behalf as service providers, under their own respective data processing and API terms.</li>
+        <li>As of the time of writing, neither provider uses data submitted through their business/API products to train their models by default, and both apply bounded data-retention windows on their end. We encourage you to review Anthropic's and OpenAI's own privacy policies for details on how they handle API data.</li>
+        <li>We do not control these third parties' systems directly, but we do not send them any more information than is necessary to generate your questions, transcribe your answer, or produce your feedback.</li>
+      </ul>
+
+      <p><strong style="color:var(--ny-ink);">Legal basis for processing (UK/EU users)</strong></p>
+      <ul>
+        <li>Account creation and sign-in: performance of a contract (our Terms of Service).</li>
+        <li>Generating interview questions and feedback: performance of a contract, and our legitimate interest in providing the App's core functionality.</li>
+        <li>Camera, microphone, and clipboard access: your consent, given at the point you choose to use these features. You can withdraw this consent at any time (see Section 4).</li>
+        <li>Technical/error logs: our legitimate interest in maintaining, securing, and improving the App.</li>
+        <li>Responding to legal requests: compliance with a legal obligation.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Where your data is stored</h2>
+      <ul>
+        <li>Session history (your practice questions, your answers, your scores and feedback) is stored locally on your device, associated with your account if you're signed in, or with a temporary guest identifier if you're not.</li>
+        <li>We do not maintain a central database of your practice sessions on our servers. If you delete the app, reinstall it, or clear its data, your session history will be lost unless it was saved under a signed-in account and synced.</li>
+        <li>Video and audio recordings are never stored — see Section 2.</li>
+      </ul>
+
+      <p><strong style="color:var(--ny-ink);">International data transfers</strong></p>
+      <p>Our backend infrastructure (Firebase/Google Cloud) and our AI service providers (Anthropic and OpenAI) may process your data on servers located outside the UK or European Economic Area, including in the United States. Where this occurs, we rely on appropriate safeguards recognized under UK and EU data protection law, such as Standard Contractual Clauses and, where applicable, adequacy decisions, to ensure your data continues to receive an equivalent level of protection. You can request further details of these safeguards by contacting us at ben@benclabs.com.</p>
+
+      <p><strong style="color:var(--ny-ink);">Security</strong></p>
+      <p>We use reasonable technical and organizational measures to protect your information, including encryption of data in transit, restricted access to backend systems, and prompt deletion of video/audio recordings after transcription. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
+    </section>
+
+    <section>
+      <h2>4. Your choices and controls</h2>
+      <ul>
+        <li>Delete an individual practice session: available directly from your session history at any time.</li>
+        <li>Clear all practice history: available from the menu at any time; this permanently removes all sessions stored on your device.</li>
+        <li>Delete your account: available from the menu at any time. This permanently deletes your sign-in credentials. Deleting your account does not automatically delete practice sessions already saved locally on your device — use "Clear all history" for that.</li>
+        <li>Camera and microphone access: you can decline or revoke this permission at any time in your device settings; you can still use Newely by typing your answers instead of recording them.</li>
+        <li>Clipboard access: only used if you tap "Paste from clipboard" when providing a job description; we do not read your clipboard at any other time.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. Third-party links</h2>
+      <p>Newely provides shortcuts to search for job postings on external sites (such as LinkedIn, Indeed, Reed, and Glassdoor). These are opened in your device's browser, are operated independently of Newely, and are governed by their own privacy policies.</p>
+    </section>
+
+    <section>
+      <h2>6. Data sharing</h2>
+      <p>We do not sell your personal information. We do not use advertising networks or share your data with advertisers. We share information only with:</p>
+      <ul>
+        <li>Anthropic and OpenAI, as described in Section 2, solely to provide the App's core AI features.</li>
+        <li>Firebase/Google Cloud, which provides the authentication and backend infrastructure Newely runs on.</li>
+        <li>Law enforcement or regulators, only if required by law.</li>
+      </ul>
+
+      <p><strong style="color:var(--ny-ink);">Business transfers</strong></p>
+      <p>If we are involved in a merger, acquisition, financing, reorganization, bankruptcy, or sale of some or all of our assets, your information may be disclosed or transferred as part of that transaction. We will notify you through the app or by other reasonable means if your information becomes subject to a different privacy policy as a result.</p>
+    </section>
+
+    <section>
+      <h2>7. Children's privacy</h2>
+      <p>Newely is not directed at children, and we do not knowingly collect information from children under the age of 13 (or the relevant minimum age in your jurisdiction). If you believe a child has provided us with personal information, please contact us so we can delete it.</p>
+    </section>
+
+    <section>
+      <h2>8. Data retention</h2>
+      <ul>
+        <li>Recordings (video/audio): never retained — deleted immediately after transcription (see Section 2).</li>
+        <li>Session history (text, scores, feedback): retained locally on your device until you delete it, clear your history, or uninstall the app.</li>
+        <li>Account information: retained until you delete your account.</li>
+        <li>Technical/error logs: retained on our backend for up to 30 days, solely to diagnose and fix problems with the App, after which they are automatically deleted.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>9. Your rights</h2>
+      <p>Depending on where you live, you may have rights to access, correct, delete, or export your personal information, or to object to certain processing. Since most of your data is stored locally on your own device, you can exercise most of these rights directly within the app (see Section 4). For anything else, contact us at ben@benclabs.com.</p>
+      <p>If you are in the UK or EU, you also have the right to lodge a complaint with your local data protection authority.</p>
+
+      <p><strong style="color:var(--ny-ink);">California privacy rights (CCPA/CPRA)</strong></p>
+      <p>If you are a California resident, you have the right to:</p>
+      <ul>
+        <li>Know the categories of personal information we have collected about you and the purposes for which it is used (see Sections 1 and 2 of this policy).</li>
+        <li>Delete personal information we have collected from you, subject to certain exceptions.</li>
+        <li>Correct inaccurate personal information.</li>
+        <li>Opt out of the sale or sharing of personal information. We do not sell or share your personal information for cross-context behavioral advertising, so no opt-out is necessary.</li>
+        <li>Non-discrimination: we will not deny you goods or services, charge different prices, or provide a different level of service because you exercised any of these rights.</li>
+      </ul>
+      <p>To exercise these rights, contact us at ben@benclabs.com. We may need to verify your identity before fulfilling certain requests.</p>
+
+      <p><strong style="color:var(--ny-ink);">Governing law</strong></p>
+      <p>This policy is governed by the laws of England and Wales, without regard to its conflict-of-law provisions, except where local law requires otherwise (for example, mandatory consumer protection or data protection rights in your country of residence, which are unaffected by this clause).</p>
+    </section>
+
+    <section>
+      <h2>10. Changes to this policy</h2>
+      <p>We may update this policy from time to time. If we make material changes, we will notify you through the app or by other reasonable means. The "Last updated" date at the top of this policy indicates when it was last revised.</p>
+    </section>
+
+    <section>
+      <h2>11. Contact us</h2>
+      <p>If you have questions about this policy or how your data is handled, contact us at:</p>
+      <p>BENC Labs Ltd<br>167-169 Great Portland Street, London, England, W1W 5PF<br>Email: ben@benclabs.com</p>
+    </section>
+
+    <div style="height:12px;"></div>
+
+    <div class="contact-block">
+      <div>
+        <div class="label">Questions about this policy?</div>
+        <div class="email">ben@benclabs.com</div>
+      </div>
+      <a class="btn" href="mailto:ben@benclabs.com">Get in touch</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site ny-footer">
+  <div class="wrap">
+    <span>© 2026 BENC Labs Ltd</span>
+    <a href="mailto:ben@benclabs.com">ben@benclabs.com</a>
+  </div>
+</footer>
+
+</body>
+</html>

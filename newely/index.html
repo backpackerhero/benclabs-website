@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Newely — BENC Labs</title>
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body class="ny-theme">
+
+<header class="site" style="background:transparent;backdrop-filter:none;border:none;">
+  <div class="wrap">
+    <div class="brand"><a href="../" style="color:inherit;text-decoration:none;">BENC <span>Labs</span></a></div>
+    <nav class="site ny-nav">
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+
+<section class="ny-hero">
+  <div class="wrap" style="text-align:center;padding-bottom:0;margin-bottom:-16px;">
+    <a href="../" style="display:inline-block;">
+      <img src="assets/wordmark.png" alt="Newely" style="height:110px;width:auto;">
+    </a>
+  </div>
+  <div class="wrap">
+    <a class="back-link ny-back" href="../">&larr; Home</a>
+    <h1 class="reveal d1">Practice the interview. <em>Before it counts.</em></h1>
+    <p class="sub reveal d2">Newely gives you realistic interview questions and honest feedback, so you walk in prepared, not guessing.</p>
+  </div>
+  <div class="ny-phone-wrap reveal d3">
+    <img class="ny-phone-frame" src="assets/interview-screen.png" alt="Recording an answer to a live interview question in Newely">
+  </div>
+</section>
+
+<section class="ny-row">
+  <div class="wrap">
+    <div class="grid">
+      <div class="reveal">
+        <div class="idx">01 — Start how you like</div>
+        <h2>Your role, <em>your way.</em></h2>
+        <p>Fill in the company and role, paste a job description for tailored questions, or jump straight into a quick practice round with no setup at all.</p>
+      </div>
+      <div class="reveal d1">
+        <div class="ny-carousel">
+          <div class="ny-carousel-track">
+            <img class="ny-carousel-slide" src="assets/home-screen.png" alt="Choosing how to start — paste a job description, fill in details, or quick practice">
+            <img class="ny-carousel-slide" src="assets/fill-details.png" alt="Entering the company and role you're applying for">
+            <img class="ny-carousel-slide" src="assets/job-description.png" alt="Pasting a job description for tailored questions">
+          </div>
+          <div class="ny-carousel-dots">
+            <button class="ny-dot" aria-label="Screen 1"></button>
+            <button class="ny-dot" aria-label="Screen 2"></button>
+            <button class="ny-dot" aria-label="Screen 3"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ny-row flip">
+  <div class="wrap">
+    <div class="grid">
+      <div class="reveal">
+        <div class="idx">02 — Set the scene</div>
+        <h2>Match the <em>real stage.</em></h2>
+        <p>Phone screen, first round, technical, or final round — pick the stage you're prepping for, and the questions adjust to match what's actually likely to come up.</p>
+      </div>
+      <div class="reveal d1">
+        <div class="ny-carousel">
+          <div class="ny-carousel-track">
+            <img class="ny-carousel-slide" src="assets/round-screen.png" alt="Choosing the interview stage — phone screen, first round, technical, or final round">
+            <img class="ny-carousel-slide" src="assets/difficulty-screen.png" alt="Choosing interview difficulty and number of questions">
+          </div>
+          <div class="ny-carousel-dots">
+            <button class="ny-dot" aria-label="Screen 1"></button>
+            <button class="ny-dot" aria-label="Screen 2"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ny-row">
+  <div class="wrap">
+    <div class="grid">
+      <div class="reveal">
+        <div class="idx">03 — Real feedback</div>
+        <h2>Know exactly <em>what to fix.</em></h2>
+        <p>Every answer gets scored on structure, specificity, relevance, and delivery, with a clear tip on what to improve before your next attempt.</p>
+      </div>
+      <div class="reveal d1">
+        <div class="ny-carousel">
+          <div class="ny-carousel-track">
+            <img class="ny-carousel-slide" src="assets/feedback-1.png" alt="Feedback score and breakdown after answering a question">
+            <img class="ny-carousel-slide" src="assets/feedback-2.png" alt="Detailed feedback breakdown with an improvement tip">
+          </div>
+          <div class="ny-carousel-dots">
+            <button class="ny-dot" aria-label="Screen 1"></button>
+            <button class="ny-dot" aria-label="Screen 2"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ny-cta">
+  <div class="wrap reveal">
+    <h2>Questions, or need help?</h2>
+    <div class="contact-block" style="max-width:520px;margin:0 auto;">
+      <div>
+        <div class="label">Support</div>
+        <div class="email">ben@benclabs.com</div>
+      </div>
+      <a class="btn" href="mailto:ben@benclabs.com">Email support</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site ny-footer">
+  <div class="wrap">
+    <span>© 2026 BENC Labs Ltd</span>
+    <a href="mailto:ben@benclabs.com">ben@benclabs.com</a>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+<script>
+// Syncs each carousel's dots to whichever slide is currently in view.
+// To add more screens to a carousel later: add another .ny-carousel-slide
+// img to its track, and another .ny-dot button to its dots row — no JS changes needed.
+document.querySelectorAll('.ny-carousel').forEach(function (carousel) {
+  var track = carousel.querySelector('.ny-carousel-track');
+  var slides = Array.from(carousel.querySelectorAll('.ny-carousel-slide'));
+  var dots = Array.from(carousel.querySelectorAll('.ny-dot'));
+  if (!track || !slides.length || !dots.length) return;
+
+  dots[0].classList.add('active');
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        var idx = slides.indexOf(entry.target);
+        dots.forEach(function (d, i) { d.classList.toggle('active', i === idx); });
+      }
+    });
+  }, { root: track, threshold: 0.6 });
+
+  slides.forEach(function (s) { io.observe(s); });
+
+  dots.forEach(function (dot, i) {
+    dot.addEventListener('click', function () {
+      slides[i].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    });
+  });
+});
+</script>
+</body>
+</html>

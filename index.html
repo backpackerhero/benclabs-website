@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BENC Labs</title>
+<meta name="description" content="BENC Labs builds small, useful apps — including Backpacker Hero and Newely.">
+<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="home-theme.css?v=3">
+</head>
+<body class="home-theme">
+
+<div class="bg-wash"></div>
+<div class="cursor-dot" id="cursor"></div>
+
+<header class="site">
+  <div class="wrap">
+    <div class="brand">BENC <span>Labs</span></div>
+    <nav class="site">
+      <a href="#apps">Apps</a>
+      <a href="mailto:ben@benclabs.com">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow"><span class="dot"></span>LONDON, UK</div>
+      <h1 class="display">We build simple, <span class="glow">useful apps.</span></h1>
+      <p class="lede">Small, focused apps beat bloated ones — designed, built, and supported by one person.</p>
+
+      <!-- TODO: confirm these numbers before shipping -->
+      <div class="readout">
+        <span><b>1</b> App Live</span>
+        <span><b>1</b> Archived</span>
+        <span><b>2026</b> Studio Founded</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="about-block reveal">
+      <div class="idx">The studio</div>
+      <p><b>BENC Labs is run by one person, from London</b> — built on the idea that small, focused apps beat bloated ones. Each product here is designed, built, and supported directly, without a big team or a big roadmap slowing things down. More apps are in the pipeline.</p>
+    </div>
+  </section>
+
+  <section id="apps" class="wrap">
+    <div class="apps-list reveal">
+
+      <div class="app-card reveal d1" style="--entry-accent:#2F4B3C;--entry-tint:#2F4B3C0D;">
+        <a class="app-card-hitbox" href="newely/" aria-label="Newely overview"></a>
+        <img src="newely/assets/icon.png" alt="" class="app-card-icon">
+        <div class="app-card-body">
+          <h2>Newely</h2>
+          <p>Your interview sparring partner — realistic questions, honest feedback, and no awkward silence while you figure out what went wrong.</p>
+          <div class="app-card-links">
+            <a href="newely/" class="app-card-link-real">Overview</a>
+            <a href="newely/privacy.html" class="app-card-link-real">Privacy</a>
+            <a href="newely/support.html" class="app-card-link-real">Support</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-card reveal d2" style="--entry-accent:#FF6B1A;--entry-tint:#FF6B1A0D;">
+        <a class="app-card-hitbox" href="backpacker-hero/" aria-label="Backpacker Hero overview"></a>
+        <img src="backpacker-hero/assets/icon.png" alt="" class="app-card-icon">
+        <div class="app-card-body">
+          <h2>Backpacker Hero</h2>
+          <p>Your co-pilot for backpacking trips — plan routes, sort stays and transport, and actually enjoy the chaos of travelling.</p>
+          <div class="app-card-links">
+            <a href="backpacker-hero/" class="app-card-link-real">Overview</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 BENC Labs Ltd</span>
+    <a href="mailto:ben@benclabs.com">ben@benclabs.com</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
