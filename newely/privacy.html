@@ -25,7 +25,7 @@
     <a class="back-link" href="index.html">&larr; Newely</a>
     <div class="page-eyebrow">Legal</div>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 22 August 2026</p>
+    <p class="updated">Last updated: 2 October 2026</p>
 
     <section>
       <p><strong style="color:var(--ny-ink);">Data controller</strong></p>
@@ -39,6 +39,10 @@
       <p><strong style="color:var(--ny-ink);">Account information</strong></p>
       <p>When you sign in with Apple or Google, we receive basic profile information from that provider (such as your name and email address, depending on what you choose to share) in order to create and identify your account. We use Firebase Authentication to manage sign-in.</p>
       <p>You can also use Newely as a guest without creating an account. In this case, no account information is collected, but your practice history will not be linked to an identity and may not carry over if you reinstall the app or switch devices.</p>
+
+      <p><strong style="color:var(--ny-ink);">Subscription and usage information</strong></p>
+      <p>If you subscribe to Newely Pro, the purchase is processed by Apple; we never receive your payment card details. We use RevenueCat to manage subscriptions, and it receives your account ID and your purchase and subscription status. We also store your display name, subscription status and your usage count (the number of answers you have submitted for feedback in the current period) on our backend.</p>
+      <p>We use your email address to send account emails, such as a welcome message, subscription confirmation and account deletion confirmation.</p>
 
       <p><strong style="color:var(--ny-ink);">Content you provide</strong></p>
       <ul>
@@ -87,7 +91,8 @@
 
       <p><strong style="color:var(--ny-ink);">Legal basis for processing (UK/EU users)</strong></p>
       <ul>
-        <li>Account creation and sign-in: performance of a contract (our Terms of Service).</li>
+        <li>Account creation and sign-in: performance of a contract (the Terms of Use, being Apple's standard licensed application EULA).</li>
+        <li>Subscriptions, usage limits and account emails: performance of a contract, and our legitimate interest in managing subscriptions and preventing misuse.</li>
         <li>Generating interview questions and feedback: performance of a contract, and our legitimate interest in providing the App's core functionality.</li>
         <li>Camera, microphone, and clipboard access: your consent, given at the point you choose to use these features. You can withdraw this consent at any time (see Section 4).</li>
         <li>Technical/error logs: our legitimate interest in maintaining, securing, and improving the App.</li>
@@ -100,11 +105,12 @@
       <ul>
         <li>Session history (your practice questions, your answers, your scores and feedback) is stored locally on your device, associated with your account if you're signed in, or with a temporary guest identifier if you're not.</li>
         <li>We do not maintain a central database of your practice sessions on our servers. If you delete the app, reinstall it, or clear its data, your session history will be lost unless it was saved under a signed-in account and synced.</li>
+        <li>Your display name, subscription status and usage counts are stored on our backend (Google Firebase).</li>
         <li>Video and audio recordings are never stored — see Section 2.</li>
       </ul>
 
       <p><strong style="color:var(--ny-ink);">International data transfers</strong></p>
-      <p>Our backend infrastructure (Firebase/Google Cloud) and our AI service providers (Anthropic and OpenAI) may process your data on servers located outside the UK or European Economic Area, including in the United States. Where this occurs, we rely on appropriate safeguards recognized under UK and EU data protection law, such as Standard Contractual Clauses and, where applicable, adequacy decisions, to ensure your data continues to receive an equivalent level of protection. You can request further details of these safeguards by contacting us at ben@benclabs.com.</p>
+      <p>Our backend infrastructure (Firebase/Google Cloud) and our service providers (Anthropic, OpenAI, RevenueCat and Resend) may process your data on servers located outside the UK or European Economic Area, including in the United States. Where this occurs, we rely on appropriate safeguards recognized under UK and EU data protection law, such as Standard Contractual Clauses and, where applicable, adequacy decisions, to ensure your data continues to receive an equivalent level of protection. You can request further details of these safeguards by contacting us at ben@benclabs.com.</p>
 
       <p><strong style="color:var(--ny-ink);">Security</strong></p>
       <p>We use reasonable technical and organizational measures to protect your information, including encryption of data in transit, restricted access to backend systems, and prompt deletion of video/audio recordings after transcription. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
@@ -115,7 +121,8 @@
       <ul>
         <li>Delete an individual practice session: available directly from your session history at any time.</li>
         <li>Clear all practice history: available from the menu at any time; this permanently removes all sessions stored on your device.</li>
-        <li>Delete your account: available from the menu at any time. This permanently deletes your sign-in credentials. Deleting your account does not automatically delete practice sessions already saved locally on your device — use "Clear all history" for that.</li>
+        <li>Delete your account: available from the menu at any time. This permanently deletes your sign-in credentials. Subscription usage records are linked to your Apple subscription and may be kept while the subscription is active. Deleting your account does not cancel your subscription (manage it in your Apple ID settings), and does not delete practice sessions saved on your device; use "Clear all history" for that.</li>
+        <li>Restore purchases: if you already have a Newely Pro subscription on your Apple ID, you can use "Restore purchases" on the subscription screen to link it to your current account.</li>
         <li>Camera and microphone access: you can decline or revoke this permission at any time in your device settings; you can still use Newely by typing your answers instead of recording them.</li>
         <li>Clipboard access: only used if you tap "Paste from clipboard" when providing a job description; we do not read your clipboard at any other time.</li>
       </ul>
@@ -132,6 +139,9 @@
       <ul>
         <li>Anthropic and OpenAI, as described in Section 2, solely to provide the App's core AI features.</li>
         <li>Firebase/Google Cloud, which provides the authentication and backend infrastructure Newely runs on.</li>
+        <li>RevenueCat, which manages subscription status and purchase records.</li>
+        <li>Apple, which processes App Store purchases and subscription payments.</li>
+        <li>Resend, which delivers our account and subscription emails.</li>
         <li>Law enforcement or regulators, only if required by law.</li>
       </ul>
 
@@ -149,7 +159,8 @@
       <ul>
         <li>Recordings (video/audio): never retained — deleted immediately after transcription (see Section 2).</li>
         <li>Session history (text, scores, feedback): retained locally on your device until you delete it, clear your history, or uninstall the app.</li>
-        <li>Account information: retained until you delete your account.</li>
+        <li>Sign-in account information: retained until you delete your account.</li>
+        <li>Subscription and usage records (display name, subscription status, usage counts): retained while needed to manage your subscription and enforce usage limits, and for as long as required for accounting or legal purposes. Contact us at ben@benclabs.com to request deletion.</li>
         <li>Technical/error logs: retained on our backend for up to 30 days, solely to diagnose and fix problems with the App, after which they are automatically deleted.</li>
       </ul>
     </section>
@@ -171,7 +182,7 @@
       <p>To exercise these rights, contact us at ben@benclabs.com. We may need to verify your identity before fulfilling certain requests.</p>
 
       <p><strong style="color:var(--ny-ink);">Governing law</strong></p>
-      <p>This policy is governed by the laws of <strong style="color:var(--ny-coral);">[JURISDICTION]</strong>, without regard to its conflict-of-law provisions, except where local law requires otherwise (for example, mandatory consumer protection or data protection rights in your country of residence, which are unaffected by this clause).</p>
+      <p>This policy is governed by the laws of England and Wales, without regard to its conflict-of-law provisions, except where local law requires otherwise (for example, mandatory consumer protection or data protection rights in your country of residence, which are unaffected by this clause).</p>
     </section>
 
     <section>
