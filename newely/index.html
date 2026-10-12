@@ -3,10 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Newely — BENC Labs</title>
+<title>Newely — Coming Soon | BENC Labs</title>
 <link rel="icon" type="image/png" href="assets/icon.png">
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="theme.css">
+<style>
+  .ny-soon-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 auto 20px;
+    padding: 7px 16px;
+    border-radius: 999px;
+    border: 1px solid currentColor;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.08);
+  }
+  .ny-soon-badge::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+    animation: ny-soon-pulse 1.8s ease-in-out infinite;
+  }
+  .ny-soon-note {
+    margin-top: 14px;
+    font-size: 15px;
+    opacity: 0.8;
+  }
+  @keyframes ny-soon-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.35; transform: scale(0.8); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .ny-soon-badge::before { animation: none; }
+  }
+</style>
 </head>
 <body class="ny-theme">
 
@@ -28,8 +64,12 @@
   </div>
   <div class="wrap">
     <a class="back-link ny-back" href="../">&larr; Home</a>
+    <div class="reveal" style="text-align:center;">
+      <span class="ny-soon-badge">Coming soon</span>
+    </div>
     <h1 class="reveal d1">Practice the interview. <em>Before it counts.</em></h1>
     <p class="sub reveal d2">Newely gives you realistic interview questions and honest feedback, so you walk in prepared, not guessing.</p>
+    <p class="sub ny-soon-note reveal d2">Newely isn't available to download yet. The screens below are a preview of what's on the way.</p>
   </div>
   <div class="ny-phone-wrap reveal d3">
     <img class="ny-phone-frame" src="assets/interview-screen.png" alt="Recording an answer to a live interview question in Newely">

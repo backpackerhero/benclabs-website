@@ -4,9 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BENC Labs</title>
-<meta name="description" content="BENC Labs builds small, useful apps — including Backpacker Hero and Newely.">
+<meta name="description" content="BENC Labs builds small, useful apps — including Newely, coming soon.">
 <link rel="stylesheet" href="styles.css?v=3">
 <link rel="stylesheet" href="home-theme.css?v=3">
+<style>
+  .status-badge {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid currentColor;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .status-badge.soon { color: #fff; background: #2F4B3C; border-color: #2F4B3C; }
+  .status-badge.closed { color: #FF6B1A; background: #FF6B1A14; }
+</style>
 </head>
 <body class="home-theme">
 
@@ -32,9 +49,9 @@
 
       <!-- TODO: confirm these numbers before shipping -->
       <div class="readout">
-        <span><b>1</b> app live</span>
-        <span><b>1</b> archived</span>
-        <span><b>2026</b> studio founded</span>
+        <span><b>1</b> Coming Soon</span>
+        <span><b>1</b> Archived</span>
+        <span><b>2026</b> Studio Founded</span>
       </div>
     </div>
   </section>
@@ -42,7 +59,7 @@
   <section class="wrap">
     <div class="about-block reveal">
       <div class="idx">The studio</div>
-      <p><b>BENC Labs is run by one person, from London</b> — built on the idea that small, focused apps beat bloated ones. Each product here is designed, built, and supported directly, without a big team or a big roadmap slowing things down. More apps are in the pipeline.</p>
+      <p><b>BENC Labs is run by one person, from London</b> — built on the idea that small, focused apps beat bloated ones. Each product here is designed, built, and supported directly, without a big team or a big roadmap slowing things down.</p>
     </div>
   </section>
 
@@ -53,7 +70,7 @@
         <a class="app-card-hitbox" href="newely/" aria-label="Newely overview"></a>
         <img src="newely/assets/icon.png" alt="" class="app-card-icon">
         <div class="app-card-body">
-          <h2>Newely</h2>
+          <h2>Newely <span class="status-badge soon">Coming soon</span></h2>
           <p>Your interview sparring partner — realistic questions, honest feedback, and no awkward silence while you figure out what went wrong.</p>
           <div class="app-card-links">
             <a href="newely/" class="app-card-link-real">Overview</a>
@@ -67,8 +84,8 @@
         <a class="app-card-hitbox" href="backpacker-hero/" aria-label="Backpacker Hero overview"></a>
         <img src="backpacker-hero/assets/icon.png" alt="" class="app-card-icon">
         <div class="app-card-body">
-          <h2>Backpacker Hero</h2>
-          <p>Your co-pilot for backpacking trips — plan routes, sort stays and transport, and actually enjoy the chaos of travelling.</p>
+          <h2>Backpacker Hero <span class="status-badge closed">Closed</span></h2>
+          <p>Your co-pilot for backpacking trips — plan routes, sort stays and transport, and actually enjoy the chaos of travelling. This app has been shut down and is no longer available.</p>
           <div class="app-card-links">
             <a href="backpacker-hero/" class="app-card-link-real">Overview</a>
 
