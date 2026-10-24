@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Newely — Coming Soon | BENC Labs</title>
+<title>Newely — Interview practice | BENC Labs</title>
+<meta name="description" content="Newely gives you realistic interview questions and honest feedback, so you walk in prepared. Three free answers, then simple one-off passes. No subscription.">
 <link rel="icon" type="image/png" href="assets/icon.png">
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="theme.css">
@@ -35,6 +36,21 @@
     font-size: 15px;
     opacity: 0.8;
   }
+  .ny-pricing-list {
+    max-width: 640px;
+    margin: 20px auto 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+  }
+  .ny-pricing-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .ny-pricing-list li:last-child { border-bottom: none; }
+  .ny-pricing-list b { font-weight: 700; }
   @keyframes ny-soon-pulse {
     0%, 100% { opacity: 1; transform: scale(1); }
     50% { opacity: 0.35; transform: scale(0.8); }
@@ -51,6 +67,7 @@
     <div class="brand"><a href="../" style="color:inherit;text-decoration:none;">BENC <span>Labs</span></a></div>
     <nav class="site ny-nav">
       <a href="privacy/">Privacy</a>
+      <a href="terms/">Terms</a>
       <a href="support/">Support</a>
     </nav>
   </div>
@@ -65,11 +82,14 @@
   <div class="wrap">
     <a class="back-link ny-back" href="../">&larr; Home</a>
     <div class="reveal" style="text-align:center;">
-      <span class="ny-soon-badge">Coming soon</span>
+      <span class="ny-soon-badge">Launching on iPhone</span>
     </div>
     <h1 class="reveal d1">Practice the interview. <em>Before it counts.</em></h1>
     <p class="sub reveal d2">Newely gives you realistic interview questions and honest feedback, so you walk in prepared, not guessing.</p>
-    <p class="sub ny-soon-note reveal d2">Newely isn't available to download yet. The screens below are a preview of what's on the way.</p>
+    <p class="sub ny-soon-note reveal d2">Built for iPhone. The App Store link will appear here at launch.</p>
+    <!-- AT LAUNCH: replace the line above with this button, using your real App Store link:
+    <p class="reveal d2" style="margin-top:18px;"><a class="btn" href="PASTE-APP-STORE-LINK-HERE">Download on the App Store</a></p>
+    and change the badge text above to "Now on the App Store" (or remove the badge). -->
   </div>
   <div class="ny-phone-wrap reveal d3">
     <img class="ny-phone-frame" src="assets/interview-screen.png" alt="Recording an answer to a live interview question in Newely">
@@ -150,6 +170,21 @@
   </div>
 </section>
 
+<section class="ny-row">
+  <div class="wrap reveal" style="text-align:center;">
+    <div class="idx">04 — Simple pricing</div>
+    <h2>Pay once. <em>No subscription.</em></h2>
+    <ul class="ny-pricing-list">
+      <li><b>3 free answers</b> with full AI feedback when you create an account.</li>
+      <li><b>Then choose a pass:</b> 3 days, 7 days or 30 days. Prices are shown in the app.</li>
+      <li><b>One-off payment.</b> Passes don't renew and there's nothing to cancel.</li>
+      <li><b>Up to 30 answers a day</b> while your pass is active.</li>
+      <li><b>Linked to your account.</b> A pass stays with the account that bought it.</li>
+    </ul>
+    <p style="margin-top:18px;font-size:14px;opacity:0.8;">See the <a href="terms/">Terms</a> for the details, including refunds.</p>
+  </div>
+</section>
+
 <section class="ny-cta">
   <div class="wrap reveal">
     <h2>Questions, or need help?</h2>
@@ -166,7 +201,7 @@
 <footer class="site ny-footer">
   <div class="wrap">
     <span>© 2026 BENC Labs Ltd</span>
-    <a href="mailto:ben@benclabs.com">ben@benclabs.com</a>
+    <span><a href="privacy/">Privacy</a> · <a href="terms/">Terms</a> · <a href="mailto:ben@benclabs.com">ben@benclabs.com</a></span>
   </div>
 </footer>
 
